@@ -41,7 +41,7 @@ void RandomTable::transpose() noexcept
 {
     for (size_t row = 0; row < table_size; row++)
     {
-        for (size_t col = 0; col < table_size; col++)
+        for (size_t col = 0; col < table_size / 2; col++)
         {
             std::swap(m_values[row][col], m_values[col][row]);
         }
